@@ -1,0 +1,101 @@
+.profile-screen {
+  width: 100vw;
+  height: 900px;
+  background-size: cover;
+  background-image: url("../../img/sheony-prof-back.jpg");
+  color: var(--white);
+}
+
+.profile-screen__background-cover {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-gray);
+  backdrop-filter: blur(1px);
+}
+
+.profile-screen__music {
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 530px;
+}
+
+.profile-screen__music,
+.profile-screen__music__column:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.profile-screen__music__cover {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+}
+
+.profile-screen__music__title {
+  font-size: 15px;
+}
+.profile-screen__music--not-bold {
+  font-weight: 400;
+}
+
+.profile-screen__music__subtitle {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+.profile-screen__music__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0px 5px;
+}
+.profile-screen__music__column:last-child i {
+  margin-left: 20px;
+}
+
+.profile-screen__profile {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profile-screen__profile__img {
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+.profile-screen__profile__name {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profile-screen__profile__state-msg {
+  font-size: 15px;
+}
+
+.profile-screen__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  margin-top: 20px;
+}
+.profile-screen__menu__column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px 20px;
+}
+.profile-screen__menu__column i {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
