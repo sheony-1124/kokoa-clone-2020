@@ -1,5 +1,16 @@
 :root {
-  --yellow: #fae100;
+  --yellow: #fff67f;
+  --red: #fbbab4;
+  --red-dot: #fe0000;
+  --green: #d2ffa0;
+  --gray: rgba(0, 0, 0, 0.3);
+  --gray-solid: #7f7f7f;
+  --bright-gray: rgba(0, 0, 0, 0.1);
+  --dark-gray: rgba(0, 0, 0, 0.5);
+  --black: #323232;
+  --white: rgba(255, 255, 255, 0.8);
+
   --horizontal-space: 25px;
   --main-border: 1px solid rgba(0, 0, 0, 0.2);
+  --thick-border: 2px solid rgba(0, 0, 0, 0.2);
 }

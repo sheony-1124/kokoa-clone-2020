@@ -9,6 +9,9 @@
   color: white;
   font-weight: 600;
 }
+.badge--none {
+  background-color: transparent;
+}
 
 .badge-dot {
   background-color: tomato;

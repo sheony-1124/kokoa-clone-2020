@@ -1,6 +1,5 @@
 #chat-screen {
-  background-color: #abc1d1;
-  height: 500vh;
+  height: 110vh;
 }
 
 #chat-screen .alt-header,
@@ -8,7 +7,8 @@
   top: 0px;
   position: fixed;
   width: 100%;
-  background-color: #abc1d1;
+  background-color: transparent;
+  backdrop-filter: blur(3px);
 }
 #chat-screen .status-bar {
   z-index: 2;
@@ -18,9 +18,19 @@
   z-index: 1;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInLeft {
   from {
-    transform: translateY(10px);
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes fadeInRight {
+  from {
+    transform: translateX(20px);
     opacity: 0;
   }
   to {
@@ -34,12 +44,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.3s linear;
 }
 
+.message-row2 {
+  opacity: 0;
+  animation: fadeInRight 0.3s linear forwards;
+}
+
+.message-row3 {
+  opacity: 0;
+  animation: fadeInLeft 0.3s linear forwards;
+  animation-delay: 2s;
+}
+.message-row4 {
+  opacity: 0;
+  animation: fadeInLeft 0.3s linear forwards;
+  animation-delay: 4s;
+}
 .chat__timestamp {
   color: white;
-  background-color: #92a4b2;
+  background-color: var(--red);
   padding: 15px;
   font-size: 14px;
   border-radius: 25px;
@@ -56,6 +80,7 @@
   height: 50px;
   border-radius: 50%;
   margin-right: 10px;
+  border: var(--main-border);
 }
 
 .message__author {
@@ -64,7 +89,7 @@
 }
 
 .message__bubble {
-  background-color: white;
+  background-color: var(--green);
   padding: 13px;
   font-size: 18px;
   border-radius: 15px;
@@ -130,16 +155,17 @@
   transition: all 0.3s ease-in-out;
 }
 
-.reply__column:last-child > i,
 .reply__column:last-child button {
   position: absolute;
-  right: 1px;
-  top: 0px;
+  right: 5px;
+  top: 5px;
 }
 
-.reply__column:last-child > i {
-  right: 40px;
-  top: 10px;
+.reply__column:last-child .fa-smile-wink {
+  position: absolute;
+  font-size: 24px;
+  right: 45px;
+  top: 12px;
 }
 
 .reply__column button {
@@ -147,7 +173,7 @@
   border: none;
   width: 30px;
   height: 30px;
-  border-radius: 15px;
+  border-radius: 50%;
 }
 
 .reply__column button i {

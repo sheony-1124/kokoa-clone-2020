@@ -16,7 +16,7 @@
   display: flex;
 }
 .more-suggestions__icon {
-  margin-right: 30px;
+  margin-right: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,4 +35,11 @@
 .more-suggestions__icon-image i {
   font-size: 32px;
   color: white;
+}
+
+.more-suggestions__icon-image3 {
+  background-color: var(--green);
+}
+.more-suggestions__icon-image4 {
+  background-color: var(--red);
 }
